@@ -1,0 +1,340 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header {
+	background-color: #1b2127;
+	color: navajowhite;
+	display: flex;
+	justify-content: space-between;
+	/*align-items: center;*/
+	height: 90px;
+	flex-wrap: wrap;
+	}
+
+.menu{
+	height: inherit;
+	text-decoration: none;
+}
+
+.header ol {
+	display: flex;
+	height: inherit;
+	
+} 
+
+
+.header ol li {
+	height: inherit;
+	display: flex;
+	align-items: center; }
+
+.header a{
+	color: white;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	height: inherit;
+	padding: 0 10px;
+}
+
+ol,
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nombre {
+	/*background-image: url("images/18.jpg"); */
+	background-color: gray;
+	height: 300px;
+	background-repeat:no-repeat;
+	background-size: 400px 300px;
+	background-position-x:right;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	
+}
+
+.nombre-image{
+	height: 300px;
+	background-repeat: url(images/Ichigo-Rukia-bleach-ichigo-and-rukia-20892058-800-600.jpg);
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+}
+h1 {
+	font-size: 40px;
+	line-height: 1.5em;
+	letter-spacing: -2px;
+	text-transform: uppercase;
+	color: white;
+	margin: 0;
+}
+
+h1 strong {
+	color:aquamarine;
+}
+
+h2 {
+	text-align: center;
+	color: darkcyan;
+}
+.project {
+	border: 1px solid gray;
+	border-radius: 20px;
+	padding: 20px;
+	background: #2B5F6A;
+	display: flex;
+	/*align-items: center; */
+	 
+	justify-content: space-between;
+}
+
+figure{
+	margin: 0px;
+}
+.event-list{
+	display: flex;
+    flex-wrap: wrap;
+}
+.event{
+	margin: 1%;
+	width: 48%;
+	flex-shrink:0;
+	overflow: hidden;
+	background: rgba(14,60,187,1.00);
+}
+
+.flexible-video{
+	padding-top: 56.25%;
+	position:relative;
+}
+
+
+
+.html-video{
+	height: 315px;
+	object-fit: cover;
+    width: 100%;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.youtube-video {
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 315px;
+	display: flex; 
+}
+
+.event-details {
+	margin: 20px 40px;
+	background-color: aqua;
+	margin-top: -80px;
+	position: relative;
+	padding: 10px;
+	text-align: center;	
+}
+.event-description{
+	/*text-aling:center;*/
+}
+.event-url{
+	border: 1px solid #730CF3;
+	padding: 5px 20px;
+	text-decoration: none;
+	color: #730CF3;
+	border-radius: 5px;
+}
+
+.event-list-title {
+	margin-left: 10px;
+}
+.container {
+	max-width: width 100px;
+	flex: 1;
+	margin: 0 auto;
+	display: inherit;
+	justify-content: inherit;
+	align-content: inherit;
+	height: inherit;
+	flex-wrap: inherit;
+	padding: 0 1em;
+}
+.form-email input{
+	border-bottom-color: gray;
+	border-style: solid;
+	border-radius: 5px;
+	padding: 10px 20px 10px 25px;
+}
+.form-email button{
+	display: block;
+	margin-top: 10px;
+	background: transparent;
+	color: white;
+	padding: 5px 0;
+	width: 100px;
+	border-color: white;
+	border-style: solid;
+	border-radius: 5px;
+	}
+.form-email h3{
+	font-family: "sourse sans pro",sans-serif;
+}
+.form-email button{
+	margin: 1em auto;
+}
+.social{
+	display: flex;
+	align-items: center;
+}
+.social-link{
+	display: flex;
+	width: 50px;
+	height: 50px;
+	margin:0 10px;
+	background-size: 50px 50px;
+}
+.social-link.facebook{
+	background-image: url(images/facebook-itunesapple.jpg)
+	
+}
+.social-link.twitter{
+	background-image: url(images/descarga.png)
+	}
+.burger-button{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,0.80);
+	display: none;
+	line-height: 40px;
+	text-align: center;
+	position: fixed;
+	z-index: 4;
+	left: 5px;
+	top:5px;
+	color: white;
+		
+}
+.footer {
+	display: block;
+	text-align: center;
+	border: 1px solid transparent;
+}
+@media screen and (max-width:767px){
+	.burger-button{
+		display: block;
+	}
+}
+	@media screen and (max-width:320px){
+		h1{
+			font-size: 1.2em;
+			padding: 3em 1em;
+		}
+	}
+@media screen and (max-width:480px){
+	h1 {
+		font-size: 1.5 em;
+	}
+	.event-details {
+		margin: -2em .5em .5em;
+		padding: 1em;
+	}
+	.contact{
+		height: auto;
+		padding: 1em 0;
+		display: block;
+		text-align: center;
+	}
+	.social{
+		display: flex;
+		justify-content: center;
+	}
+	.form-email button{
+		margin:1em auto;
+	}
+	.footer{
+		display: block;
+		text-align: center;
+		border: 1px solid transparent;
+	}
+}
+@media screen and (max-width:767px){
+	.burger-button{
+		display: block;
+	}
+	.header{
+		display: block;
+		height: auto;
+	}
+	.header ol{
+		display: block
+	}
+	.header ol lo{
+		height: 40px;
+		display: block;
+	}
+	.header a {
+		justify-content: center;
+		height: 40px;
+		font-size: 2em;
+		text-decoration: underline;
+		margin-bottom: .5em;
+	}
+	.header .logo{
+		text-align: center;
+	}
+}
+	
+.menu{
+	position: fixed;
+	background: rgba(5, 111, 255, .9);
+	z-index: 3;
+	top: 0;
+	left: -100vw;/*para que el menu se oculte a la izquierda y se muestre al hacer clic*/
+	width: 100vw;
+	buttom:0;
+	/*height: 100vh*/ /*a partir de aqui para centrar*/
+	display: flex;
+	align-items: center;
+	transition: 3s;/*crea efecto de transicion*/
+}
+.menu.is-active {
+	left: 0;
+}
+.project{
+	display: block;
+}
+.project-details{
+	width: auto;
+}
+.project-imageContainer{
+	width: auto;
+	text-align: center;
+}
+.project-description{
+	font-size: .8em;
+}
+.event img{
+	width: 95%;
+	flez-shrink:initial;
+	text-align: center;
+}
+.event img{
+	width: 95%
+}
+.event-details{
+	margin: -40px 10px 10px 10px;
+}
